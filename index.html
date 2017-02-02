@@ -22,6 +22,8 @@
         </ul>
 
         <span class="answerOne">correct answer</span>
+        <!-- This is the line of code that is causing the "correct answer" text to
+             show underneath the question options -->
 
       <h2>2. Who is the Redskins Head Coach?</h2>
         <ul>
@@ -31,15 +33,22 @@
         </ul>
 
         <span class="answer1">correct answer</span>
+        <!-- This is the line of code that is causing the "correct answer" text to
+             show underneath the question options -->
 
       <h2>3. Who is the Redskins owner?</h2>
         <ul>
           <input class="answer7" type="radio">Rob Kardashian</input>
           <input class="answer8" type="radio">Dan Snyder</input>
           <input class="answer9" type="radio">Jerry Jones</input>
+          <!-- like the user of type radio did not know that was a button type-->
         </ul>
+        <!-- for the input classes
+        keep one generic class name for styling and then use an ID
+        i.e. <input class="answer" id="9">....</input> -->
 
       <input class="submit" type="button" value="Submit Answers"></input>
+      <!-- The submit button isn't actually having any functionality  -->
     </main>
 
 <script type="text/javascript" src="script.js"></script>

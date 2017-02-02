@@ -27,7 +27,6 @@
 //   B. Dan Snyder
 //   C. Jerry Jones
 
-
 var triviaArray = [
   {
     optionOne: 'Kirk Cousins',
@@ -62,12 +61,18 @@ var triviaArray = [
 $("input").on("click", function() {
   //function (not working)
 })
-
+// $('.answerOne').toggle();
+// if you wanted to hide the "correct answer"
+// use toggle(), this is like a switch to flip between showing that certain
+// class or not
+// currently it is hiding the .answerOne class
 //Correct Answer (Kirk Cousins)
 $(".answer1").on("click", function() {
 
   $("body").css("background-color", "blue");
-
+  // $('.answerOne').toggle();
+  // placing .toggle() here for the second time will allow the user to see that
+  // they selected the correct answer
   submitQuiz();
 
 })
@@ -75,13 +80,13 @@ $(".answer1").on("click", function() {
 //Wrong Answers
 $(".answer2, .answer3, .answer5, .answer6, .answer7, .answer9").on("click", function() {
   $("body").css("background-color", "yellow");
+  // definitely like how the page color changes when answer is clicked
   submitQuiz();
 })
 //correct answer (jay Gruden)
 $(".answer4").on("click", function() {
 
   $("body").css("background-color", "blue");
-
   submitQuiz();
 
 })
@@ -89,12 +94,19 @@ $(".answer4").on("click", function() {
 $(".answer8").on("click", function() {
   $(".answer4").css("background-color", "blue");
   $("body").css("background-color", "blue");
-
   submitQuiz();
 })
 
 
+// $('.submit').on('click', pageReset);
+// function pageReset() {
+//   location.reload();
+// }
+// this function right here will allow the user to restart the game once answers
+//  have been submitted
+
 
 function submitQuiz() {
   console.log('submitted');``
+
 }
